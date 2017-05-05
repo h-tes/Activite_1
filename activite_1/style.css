@@ -1,0 +1,162 @@
+@font-face
+{
+	font-family: 'Bernadette'
+	src: url('polices/Bernadette.ttf');
+	
+	font-weight: normal;
+	font-style: normal;
+}
+
+html
+{
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	margin: 0 10px 0 10px;
+	font-family: Arial;
+	color: black;
+	background-image: url('img/fond_jaune.png');
+	margin-left: 0px;
+}
+
+
+
+#block_page
+{
+	height: 100%;
+	display: flex;
+}
+
+#banniere_verticale
+{
+	width: 10%;
+	background-image: url('img/backgr.jpg');
+	border-radius: 10px;
+}
+
+#mon_cv
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 0px;
+}
+
+
+header
+{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+	align-items: center;
+}
+
+#texte
+{
+	width: 100%;
+}
+
+header h1
+{
+	font-family: impact, serif;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+header h2
+{
+	font-family: 'Bernadette', serif;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+header img
+{
+	border: 2px  solid black;
+}
+
+
+
+section
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 50px;
+}
+
+
+section h1
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#mon_experience
+{
+	width: 34%;
+	padding-right: 20px;
+	border-right: 2px solid black;
+}
+
+#mes_competences
+{
+	width: 33%;
+	border-right: 2px solid black;
+}
+
+#ma_formation
+{
+	width: 33%;
+	
+}
+
+li
+{
+	text-align: justify;
+}
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    #banniere_verticale
+    {
+    	display: none;
+    }
+    section
+    {
+    	flex-direction: column;
+    }
+
+    #mon_experience
+	{
+		width: 100%;
+		padding-right: 20px;
+		border-right: none;
+		border-bottom: 2px solid black;
+		border-top: 2px solid black;
+	}
+
+	#mes_competences
+	{
+		width: 100%;
+		border-right: none;
+		border-bottom: 2px solid black;
+	}
+	#ma_formation
+	{
+		width: 100%;
+	
+	}
+}
